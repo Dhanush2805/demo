@@ -1,0 +1,15 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches:
+
+permissions:
+  actions: read
+  contents: read
+  pull-requests: read
+  security-events: write
+
+jobs:
+  ash_scan:
+    uses: Dhanush2805/ash-security-platform/.github/workflows/ash-scan.yml@v1.0.37
