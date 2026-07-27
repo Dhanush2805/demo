@@ -1,0 +1,23 @@
+# Example Environment Variables for Knowledge Graph Chatbot
+# Copy these to your system environment or create a .env file
+
+# Neo4j Configuration
+NEO4J_URI=bolt://localhost:7687
+NEO4J_USER=neo4j
+NEO4J_PASSWORD=00000000
+
+
+# Vector Database Configuration
+VECTOR_DB_FOLDER=./vector_db
+VECTOR_MODEL_NAME=all-MiniLM-L6-v2
+
+# File Processing Configuration
+TEMP_FOLDER=./temp_files
+CSV_FOLDER=C:/neo4j-import
+MAX_FILE_SIZE_MB=100
+
+# LLM Configuration
+BEDROCK_MODEL_ID=us.anthropic.claude-sonnet-4-20250514-v1:0
+LLM_MAX_TOKENS=4000
+LLM_TEMPERATURE=0
+
